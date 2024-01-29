@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div>
+        <p>Username: @HttpContext.Session.GetString("Username")</p>
+        <p>Password: @HttpContext.Session.GetString("Password")</p>
+    </div>
+</div>
